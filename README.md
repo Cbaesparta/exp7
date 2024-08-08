@@ -374,7 +374,117 @@ Enter element-1: 5
 Maximum: 6
 Minimum: 5*/
 ```
-### Summary
+### Strings code 1:
+```cpp
+//Sai Sankar Jena
+//entc B2
+//23070123112
+//experiment 7 strings1
+#include <iostream>
+#include<string>
+using namespace std;
+int main(){
+    string a;
+    cout<<"enter any word: ";
+    cin>>a;
+    cout<<" entered string is "<<a<<endl;
+    return 0;
+}
+/*PS C:\Users\asus\Desktop\cds> cd "c:\Users\asus\Desktop\cds\arrayandstrings\" ; if ($?) { g++ strings1.cpp -o strings1 } ; if ($?) { .\strings1 }
+enter any word: saii
+ entered string is saii*/
+```
+### Strings code 2:
+```cpp
+//Sai 
+//entc B2
+//23070123112
+//experiment 7
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,b;
+    cout<<"enter string1: ";
+    cin>>a;
+cout<<"enter string 2:";
+    cin>>b;
+    cout<<"CONCATENATION: "<<a+b;
+    return 0;
+}
+/*PS C:\Users\asus\Desktop\cds\arrayandstrings> cd "c:\Users\asus\Desktop\cds\arrayandstrings\" ; if ($?) { g++ concatenatestr.cpp -o concatenatestr } ; if ($?) { .\concatenatestr }
+enter string1: sai
+enter string 2:sankar
+CONCATENATION: saisankar*/
+```
+### Strings code 3:
+```cpp
+//Sai Sankar
+//entc B2
+//23070123112
+//experiment 7
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"enter string you want to reverse: ";
+    cin>>a;
+    int i;
+    cout<<"Here is your reversed string:"<<endl;
+    for(i=a.length()-1;i>=0;i--)
+    
+    {
+        cout<<a[i];
+    }
+    return 0;
+}
+/*PS C:\Users\asus\Desktop\cds\arrayandstrings> cd "c:\Users\asus\Desktop\cds\arrayandstrings\" ; if ($?) { g++ revstring.cpp -o revstring } ; if ($?) { .\revstring }
+enter string you want to reverse: sai
+Here is your reversed string:
+ias*/
+```
+### String Code 4:
+```cpp
+//SAI SANKAR
+//entc B2
+//23070123112
+//experiment 7
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"enter a string: ";
+    cin>>a;
+    int n=a.length(),i,flag=0;
+    for(i=0;i<a.length();i++)
+    {
+        if(a[i]==a[n-1])
+        {
+            flag=1;
+        }
+        n--;
+    }
+    if(flag==1)
+    {
+        cout<<a<<" is palindrome";
+    }
+    else
+    {
+        cout<<a<<" is not palindrome";
+    }
+}
+/*PS C:\Users\asus\Desktop\cds\arrayandstrings> cd "c:\Users\asus\Desktop\cds\arrayandstrings\" ; if ($?) { g++ PALINDROME.cpp -o PALINDROME } ; if ($?) { .\PALINDROME }
+enter a string: MALAYALAM
+MALAYALAM is palindrome
+PS C:\Users\asus\Desktop\cds\arrayandstrings> cd "c:\Users\asus\Desktop\cds\arrayandstrings\" ; if ($?) { g++ PALINDROME.cpp -o PALINDROME } ; if ($?) { .\PALINDROME }
+enter a string: SEMICINDUCTOR
+SEMICINDUCTOR is palindrome*/
+```
 
 
 
